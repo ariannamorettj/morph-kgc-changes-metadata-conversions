@@ -1,0 +1,233 @@
+@prefix aat: <http://vocab.getty.edu/page/aat/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix ex: <https://w3id.org/dharc/ontology/chad-ap/data/example/> .
+@prefix lrmoo: <http://iflastandards.info/ns/lrm/lrmoo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:1-item a lrmoo:F5_Item ;
+    crm:P1_is_identified_by ex:1-item-identifier-01,
+        ex:1-item-identifier-02,
+        ex:1-item-identifier-03 ;
+    crm:P3_has_note "Carta nautica Nautical chart Grazioso Benincasa, sec. XV BUB, Rotulo 3"^^rdfs:Literal .
+
+ex:1-item-identifier-01 a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "1"^^rdfs:Literal ;
+    crm:P2_has_type aat:300312355 .
+
+ex:2-item a lrmoo:F5_Item ;
+    crm:P1_is_identified_by ex:2-item-identifier-01,
+        ex:2-item-identifier-02,
+        ex:2-item-identifier-03 ;
+    crm:P3_has_note "Panthera leo (Linnaeus, 1758) Diorama con tre leoni tassidermizzati Diorama with three taxidermized lions Manifattura Rowland Ward - Londra, inizio sec. XX – early 20th century Bologna, Collezione di Zoologia, Sistema Museale di Ateneo"^^rdfs:Literal .
+
+ex:2-item-identifier-01 a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "2"^^rdfs:Literal ;
+    crm:P2_has_type aat:300312355 .
+
+ex:benincasa-grazioso a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500114874> .
+
+ex:bub a crm:E39_Actor .
+
+ex:l1-item a lrmoo:F5_Item ;
+    crm:P1_is_identified_by ex:l1-item-identifier-01,
+        ex:l1-item-identifier-02,
+        ex:l1-item-identifier-03 ;
+    crm:P3_has_note "Amerigo Vespucci sveglia l’America Amerigo Vespucci awakens a sleeping America In Jan van del Straet (Stradano), Nova Reperta, c. 1589 – c.1593, Antwerp Amsterdam, Rijksmuseum"^^rdfs:Literal .
+
+ex:l1-item-identifier-01 a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "L1"^^rdfs:Literal ;
+    crm:P2_has_type aat:300312355 .
+
+ex:nova-reperta-expression a lrmoo:F2_Expression ;
+    lrmoo:R4i_is_embodied_in ex:nova-reperta-manifestation .
+
+ex:nova-reperta-item a lrmoo:F5_Item .
+
+ex:nova-reperta-manifestation a lrmoo:F3_Manifestation ;
+    lrmoo:R7i_is_exemplified_by ex:nova-reperta-item ;
+    crm:P2_has_type aat:300189634 .
+
+ex:nova-reperta-work a lrmoo:F1_Work ;
+    lrmoo:R10_has_member ex:L1-work ;
+    lrmoo:R3_is_realised_in ex:nova-reperta-expression .
+
+ex:rijksmuseum a crm:E39_Actor .
+
+ex:sistema-museale-di-ateneo-di-bologna a crm:E39_Actor .
+
+ex:straet-jan-van-der a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500011304> .
+
+ex:ward-james-rowland a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/60497939> .
+
+ex:1-expression-creation a lrmoo:F28_Expression_Creation ;
+    lrmoo:R17_created ex:1-expression ;
+    lrmoo:R19_created_a_realisation_of ex:1-work ;
+    crm:P32_used_general_technique aat:300054196 ;
+    crm:P4_has_time-span ex:1482 ;
+    crm:P9_consists_of ex:1-expression-creation-activity-01 .
+
+ex:1-item-curation a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:bub ;
+    crm:P16_used_specific_object ex:1-item ;
+    crm:P2_has_type aat:300054277 .
+
+ex:1-item-identifier-02 a crm:E42_Identifier ;
+    crm:P2_has_type aat:300445021 .
+
+ex:1-item-identifier-03 a crm:E42_Identifier ;
+    crm:P190_has_symbolic_content "Rotulo 3"^^rdfs:Literal ;
+    crm:P2_has_type aat:300404704 .
+
+ex:1-manifestation-license a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300435434 ;
+    crm:P67_refers_to ex:1-manifestation ;
+    crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
+
+ex:2-expression-creation a lrmoo:F28_Expression_Creation ;
+    lrmoo:R17_created ex:2-expression ;
+    lrmoo:R19_created_a_realisation_of ex:2-work ;
+    crm:P32_used_general_technique aat:300053628 ;
+    crm:P4_has_time-span ex:1900-1930 ;
+    crm:P9_consists_of ex:2-expression-creation-activity-01 .
+
+ex:2-item-curation a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:sistema-museale-di-ateneo-di-bologna ;
+    crm:P16_used_specific_object ex:2-item ;
+    crm:P2_has_type aat:300054277 .
+
+ex:2-item-identifier-02 a crm:E42_Identifier ;
+    crm:P2_has_type aat:300445021 .
+
+ex:2-item-identifier-03 a crm:E42_Identifier ;
+    crm:P2_has_type aat:300404704 .
+
+ex:2-manifestation-license a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300435434 ;
+    crm:P67_refers_to ex:2-manifestation ;
+    crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
+
+ex:L1-expression-creation a lrmoo:F28_Expression_Creation ;
+    lrmoo:R17_created ex:L1-expression ;
+    lrmoo:R19_created_a_realisation_of ex:L1-work ;
+    crm:P32_used_general_technique aat:300053225 ;
+    crm:P4_has_time-span ex:1589-1593 ;
+    crm:P9_consists_of ex:L1-expression-creation-activity-01 .
+
+ex:L1-item-curation a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:rijksmuseum ;
+    crm:P16_used_specific_object ex:L1-item ;
+    crm:P2_has_type aat:300054277 .
+
+ex:L1-item-identifier-02 a crm:E42_Identifier ;
+    crm:P2_has_type aat:300445021 .
+
+ex:L1-item-identifier-03 a crm:E42_Identifier ;
+    crm:P2_has_type aat:300404704 .
+
+ex:L1-manifestation-license a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300435434 ;
+    crm:P67_refers_to ex:L1-manifestation ;
+    crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
+
+ex:1-expression-creation-activity-01 a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:benincasa-grazioso ;
+    crm:P2_has_type aat:300404387 .
+
+ex:1-work a lrmoo:F1_Work ;
+    lrmoo:R3_is_realised_in ex:1-expression ;
+    crm:P102_has_title ex:1-work-title-01,
+        ex:1-work-title-02 .
+
+ex:1-work-title-01 a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Carta Nautica"@it ;
+    crm:P2_has_type aat:300417204 .
+
+ex:1-work-title-02 a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Nautical chart"@en,
+        "Carta nautica"@it ;
+    crm:P2_has_type aat:300417207 .
+
+ex:1482 a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1482-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    crm:P82b_end_of_the_end "1482-12-31T23:59:59+00:00"^^xsd:dateTime .
+
+ex:1589-1593 a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1589-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    crm:P82b_end_of_the_end "1593-12-31T23:59:59+00:00"^^xsd:dateTime .
+
+ex:1900-1930 a crm:E52_Time-Span ;
+    crm:P82a_begin_of_the_begin "1900-01-01T00:00:00+00:00"^^xsd:dateTime ;
+    crm:P82b_end_of_the_end "1930-12-31T23:59:59+00:00"^^xsd:dateTime .
+
+ex:2-expression-creation-activity-01 a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:ward-james-rowland ;
+    crm:P2_has_type aat:300404387 .
+
+ex:2-work a lrmoo:F1_Work ;
+    lrmoo:R3_is_realised_in ex:2-expression ;
+    crm:P102_has_title ex:2-work-title-01,
+        ex:2-work-title-02 .
+
+ex:2-work-title-01 a crm:E35_Title ;
+    crm:P2_has_type aat:300417204 .
+
+ex:2-work-title-02 a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Lion (Linnaeus, 1758)"@en,
+        "Panthera leo (Linnaeus, 1758)"@it ;
+    crm:P2_has_type aat:300417207 .
+
+ex:Amerigo%20Vespucci%3B%20astrolabio%3B%20vessillo%20Croce%20del%20sud%3B%20formichiere%3B%20bradipo%3B%20tapiro%3B%20gruppo%20di%20cannibali a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:Europa%3B%20Africa%3B%20Asia%3B%20Mar%20Mediterraneo a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:L1-expression-creation-activity-01 a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:straet-jan-van-der ;
+    crm:P2_has_type aat:300404387 .
+
+ex:L1-work-title-01 a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Amerigo Vespucci sveglia l’America"@it ;
+    crm:P2_has_type aat:300417204 .
+
+ex:L1-work-title-02 a crm:E35_Title ;
+    crm:P190_has_symbolic_content "Amerigo Vespucci awakens a sleeping America"@en,
+        "Amerigo Vespucci sveglia l’America"@it ;
+    crm:P2_has_type aat:300417207 .
+
+ex:leone a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:1-expression a lrmoo:F2_Expression ;
+    lrmoo:R4i_is_embodied_in ex:1-manifestation ;
+    crm:P129_is_about ex:Europa%3B%20Africa%3B%20Asia%3B%20Mar%20Mediterraneo .
+
+ex:1-manifestation a lrmoo:F3_Manifestation ;
+    lrmoo:R7i_is_exemplified_by ex:1-item ;
+    crm:P2_has_type aat:300028309 .
+
+ex:2-expression a lrmoo:F2_Expression ;
+    lrmoo:R4i_is_embodied_in ex:2-manifestation ;
+    crm:P129_is_about ex:leone .
+
+ex:2-manifestation a lrmoo:F3_Manifestation ;
+    lrmoo:R7i_is_exemplified_by ex:2-item ;
+    crm:P2_has_type aat:300047762 .
+
+ex:L1-expression a lrmoo:F2_Expression ;
+    lrmoo:R4i_is_embodied_in ex:L1-manifestation ;
+    crm:P129_is_about ex:Amerigo%20Vespucci%3B%20astrolabio%3B%20vessillo%20Croce%20del%20sud%3B%20formichiere%3B%20bradipo%3B%20tapiro%3B%20gruppo%20di%20cannibali .
+
+ex:L1-manifestation a lrmoo:F3_Manifestation ;
+    lrmoo:R7i_is_exemplified_by ex:L1-item ;
+    crm:P2_has_type aat:300041273 .
+
+ex:L1-work a lrmoo:F1_Work ;
+    lrmoo:R3_is_realised_in ex:L1-expression ;
+    crm:P102_has_title ex:L1-work-title-01,
+        ex:L1-work-title-02 .
+
