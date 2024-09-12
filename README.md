@@ -127,3 +127,42 @@ If you used Morph-KGC in your work, please cite the **[SoftwareX](https://www.sc
 
 # CHANGES Metadata Conversion Plugin
 
+## To Do:
+- produce mapping for acquisition process 
+- Manage both VIAF and ULAN in case a different id is found 
+- Issue with angular brackets, quotes, and datatype managed in pre or post processing. To be authomatized with mapping. See also: Issue with specifying types (IRI/string/etc) when using a function. Check if it's manageable also with YARRRML (it is possible with a RML mapping, try using the official converter). For now: default post-processing is executed on the first version of the RDF file just produced.
+- Similarly, the ```clean_csv``` is necessary for extracting the language - Verify with the suggestion by the developer.
+- Clarify licenses and IRI of licenses. 
+- consider uniforming name-surname order.
+- Keep for now a unique file for all the triples, consider separating for each entity. 
+- make the code command-line-executable
+
+
+
+## How to run the code
+
+### preprocessing
+```
+python src/morph_kgc_changes_metadata_conversions/clean_csv.py
+```
+- change manually the paths of the input and the output file (where the input file is the raw one and the output file is the postprocessed input. In the current execution, the file is overwritten)
+
+### triples production and postprocessing
+```
+python main_aldrovandi.py
+```
+- change manually input, output, mapping and configuration paths if needed
+- the execution of this file, postprocess the produced data and fixes issues related to the dataypes of the subjects and objects of the produced triples, where needed. 
+
+### current mapping file path 
+```
+src/morph_kgc_changes_metadata_conversions/sample_mapping_file.yaml
+```
+
+### structure of the input file
+- the code currently accepts as input csv tables structured as the sample at path: 
+
+```
+src/morph_kgc_changes_metadata_conversions/sample_input_3_entries.csv
+```
+

@@ -74,14 +74,14 @@ add_language_column(input_csv, output_csv)
 # NAN TO EMPTY STRING
 
 # csv file
-csv_file_path = "aldrovandi/sample_input_file.csv"
+csv_file_path = "src/morph_kgc_changes_metadata_conversions/sample_input_file.csv"
 df = pd.read_csv(csv_file_path, delimiter=',', quotechar='"', encoding='utf-8')
 
 # subs NaN with empty strings
 df = df.fillna('')
 
 # save modified dataframe
-preprocessed_csv_file_path = "aldrovandi/sample_input_file.csv"
+preprocessed_csv_file_path = "src/morph_kgc_changes_metadata_conversions/sample_input_file.csv"
 df.to_csv(preprocessed_csv_file_path, index=False, quoting=1, encoding='utf-8')
 
 print(f"Preprocessed CSV saved to: {preprocessed_csv_file_path}")
