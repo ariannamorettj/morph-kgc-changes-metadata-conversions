@@ -25,10 +25,34 @@ ex:2-item-identifier-01 a crm:E42_Identifier ;
     crm:P190_has_symbolic_content "2"^^rdfs:Literal ;
     crm:P2_has_type aat:300312355 .
 
+ex:africa a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:amerigo_vespucci a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:asia a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:astrolabio a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
 ex:benincasa-grazioso a crm:E39_Actor ;
     crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500114874> .
 
+ex:bradipo a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
 ex:bub a crm:E39_Actor .
+
+ex:europa a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:formichiere a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:gruppo_di_cannibali a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
 
 ex:l1-item a lrmoo:F5_Item ;
     crm:P1_is_identified_by ex:l1-item-identifier-01,
@@ -39,6 +63,12 @@ ex:l1-item a lrmoo:F5_Item ;
 ex:l1-item-identifier-01 a crm:E42_Identifier ;
     crm:P190_has_symbolic_content "L1"^^rdfs:Literal ;
     crm:P2_has_type aat:300312355 .
+
+ex:leone a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:mar_mediterraneo a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
 
 ex:nova-reperta-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:nova-reperta-manifestation .
@@ -59,6 +89,12 @@ ex:sistema-museale-di-ateneo-di-bologna a crm:E39_Actor .
 
 ex:straet-jan-van-der a crm:E39_Actor ;
     crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500011304> .
+
+ex:tapiro a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
+
+ex:vessillo_croce_del_sud a crm:E73_Information_Object ;
+    crm:P2_has_type aat:300404126 .
 
 ex:ward-james-rowland a crm:E39_Actor ;
     crm:P70i_is_documented_in <http://viaf.org/viaf/60497939> .
@@ -180,12 +216,6 @@ ex:2-work-title-02 a crm:E35_Title ;
         "Panthera leo (Linnaeus, 1758)"@it ;
     crm:P2_has_type aat:300417207 .
 
-ex:Amerigo%20Vespucci%3B%20astrolabio%3B%20vessillo%20Croce%20del%20sud%3B%20formichiere%3B%20bradipo%3B%20tapiro%3B%20gruppo%20di%20cannibali a crm:E73_Information_Object ;
-    crm:P2_has_type aat:300404126 .
-
-ex:Europa%3B%20Africa%3B%20Asia%3B%20Mar%20Mediterraneo a crm:E73_Information_Object ;
-    crm:P2_has_type aat:300404126 .
-
 ex:L1-expression-creation-activity-01 a crm:E7_Activity ;
     crm:P14_carried_out_by ex:straet-jan-van-der ;
     crm:P2_has_type aat:300404387 .
@@ -199,12 +229,12 @@ ex:L1-work-title-02 a crm:E35_Title ;
         "Amerigo Vespucci sveglia l’America"@it ;
     crm:P2_has_type aat:300417207 .
 
-ex:leone a crm:E73_Information_Object ;
-    crm:P2_has_type aat:300404126 .
-
 ex:1-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:1-manifestation ;
-    crm:P129_is_about ex:Europa%3B%20Africa%3B%20Asia%3B%20Mar%20Mediterraneo .
+    crm:P129_is_about ex:africa,
+        ex:asia,
+        ex:europa,
+        ex:mar_mediterraneo .
 
 ex:1-manifestation a lrmoo:F3_Manifestation ;
     lrmoo:R7i_is_exemplified_by ex:1-item ;
@@ -220,7 +250,13 @@ ex:2-manifestation a lrmoo:F3_Manifestation ;
 
 ex:L1-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:L1-manifestation ;
-    crm:P129_is_about ex:Amerigo%20Vespucci%3B%20astrolabio%3B%20vessillo%20Croce%20del%20sud%3B%20formichiere%3B%20bradipo%3B%20tapiro%3B%20gruppo%20di%20cannibali .
+    crm:P129_is_about ex:amerigo_vespucci,
+        ex:astrolabio,
+        ex:bradipo,
+        ex:formichiere,
+        ex:gruppo_di_cannibali,
+        ex:tapiro,
+        ex:vessillo_croce_del_sud .
 
 ex:L1-manifestation a lrmoo:F3_Manifestation ;
     lrmoo:R7i_is_exemplified_by ex:L1-item ;

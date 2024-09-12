@@ -145,29 +145,43 @@ mappings:
     po:
       - [ a, "lrmoo:F2_Expression" ]
       - p: "crm:P129_is_about"
-        o: "ex:$(Soggetti)"
+        o:
+          # Passaggio 2: Normalizzare e convertire in IRI
+          - function: idlab-fn:normalize_and_convert_to_iri
+            parameters:
+              - parameter: idlab-fn:valueParams
+                value:
+                  # Passaggio 1: Esplodere i soggetti
+                  function: morph-kgc:string_split_explode
+                  parameters:
+                    - parameter: grel:param_string_sep
+                      value: ";"
+                    - parameter: grel:valueParam
+                      value: $(Soggetti)
       - p: "lrmoo:R4i_is_embodied_in"
         o: "ex:$(NR)-manifestation"
 
-####### ERROR
 
   subject_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-      - iterator: "$.s[*]"
     s:
-      function: idlab-fn:string_split_esplode
-      parameters:
-        - parameter: idlab-fn:valueParam
-          value: $(Soggetti)
-        - parameter: idlab-fn:param_string_sep
-          value: ";"
-
+      # Passaggio 2: Normalizzare e convertire in IRI
+      - function: idlab-fn:normalize_and_convert_to_iri
+        parameters:
+          - parameter: idlab-fn:valueParams
+            value:
+            # Passaggio 1: Esplodere i soggetti
+              function: morph-kgc:string_split_explode
+              parameters:
+                - parameter: grel:param_string_sep
+                  value: ";"
+                - parameter: grel:valueParam
+                  value: $(Soggetti)
     po:
       - [ a, "crm:E73_Information_Object" ]
       - ["crm:P2_has_type", "aat:300404126"]
 
-#
 
   manifestation_mapping:
     sources:
@@ -259,7 +273,7 @@ mappings:
           function: idlab-fn:convert_documentary_type_to_aat
           parameters:
             - parameter: idlab-fn:param_documentary_type
-              value: $(Tipologia opera parente) # Usa la colonna corretta
+              value: $(Tipologia opera parente)
       - p: lrmoo:R7i_is_exemplified_by
         o:
           function: idlab-fn:normalize_and_suffix

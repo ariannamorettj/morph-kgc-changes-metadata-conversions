@@ -521,4 +521,14 @@ def normalize_and_suffix(param_name, suffix):
     return f"ex:{normalized_name}{suffix}"
 
 
+@udf(
+    fun_id='http://example.com/idlab/function/normalize_and_convert_to_iri',
+    str_param='http://example.com/idlab/function/valueParams'
+)
+def normalize_and_convert_to_iri(str_param):
+    str_param = str_param.strip()
+    str_param = str_param.replace(' ', '_').lower()
+    return [f"ex:{str_param}"]
+
+
 
