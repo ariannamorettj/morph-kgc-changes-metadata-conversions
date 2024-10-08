@@ -138,6 +138,7 @@ If you used Morph-KGC in your work, please cite the **[SoftwareX](https://www.sc
 - make the code command-line-executable
 - implementing the possibility of splitting the files production (one for each aton object, for example)
 - flask webserver for easily exploitable UI 
+- Fonte,Immagine digitale, Iconografia non sono attualmente modellate
 
 
 

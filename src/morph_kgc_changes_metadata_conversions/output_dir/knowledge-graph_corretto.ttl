@@ -5,6 +5,13 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ex:1-commission-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:riario-raffaelo ;
+    crm:P2_has_type aat:300417639 .
+
+ex:1-engraving-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300053225 .
+
 ex:1-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:1-manifestation ;
     crm:P129_is_about ex:africa,
@@ -28,7 +35,7 @@ ex:1-item a lrmoo:F5_Item ;
         ex:1-item-identifier-02,
         ex:1-item-identifier-03 ;
     crm:P3_has_note "Carta nautica Nautical chart Grazioso Benincasa, sec. XV BUB, Rotulo 3"^^rdfs:Literal ;
-    crm:P74_has_current_or_former_residence ex:1-room .
+    crm:P53_has_former_or_current_location ex:1-room .
 
 ex:1-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:bub ;
@@ -55,13 +62,24 @@ ex:1-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:1-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:1-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:1-publishing-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300054686 .
+
+ex:1-publishing-place a crm:E53_Place .
+
 ex:1-room a crm:E53_Place ;
-    crm:P74i_is_current_or_former_residence_of ex:1-item,
+    crm:P53i_is_former_or_current_location_of ex:1-item,
         ex:12-item,
         ex:2-item,
         ex:3-item,
         ex:5-item,
         ex:l1-item .
+
+ex:1-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
 
 ex:1-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:1-expression ;
@@ -76,6 +94,12 @@ ex:1-work-title-02 a crm:E35_Title ;
     crm:P190_has_symbolic_content "Nautical chart"@en,
         "Carta nautica"@it ;
     crm:P2_has_type aat:300417207 .
+
+ex:12-commission-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300417639 .
+
+ex:12-engraving-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300053225 .
 
 ex:12-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:12-manifestation ;
@@ -96,7 +120,7 @@ ex:12-item a lrmoo:F5_Item ;
         ex:12-item-identifier-02,
         ex:12-item-identifier-03 ;
     crm:P3_has_note "Panthera onca (Linnaeus, 1758) Esemplare tassidermizzato di giaguaro Taxidermized specimen of jaguar sec. XXI 21st century Pisa, preparatore Naturaliter"^^rdfs:Literal ;
-    crm:P74_has_current_or_former_residence ex:1-room .
+    crm:P53_has_former_or_current_location ex:1-room .
 
 ex:12-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:sistema-museale-di-ateneo-di-bologna ;
@@ -122,6 +146,18 @@ ex:12-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:12-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:12-preparation-activity-01 a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:naturaliter ;
+    crm:P2_has_type aat:300077565 .
+
+ex:12-publishing-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300054686 .
+
+ex:12-publishing-place a crm:E53_Place .
+
+ex:12-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
+
 ex:12-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:12-expression ;
     crm:P102_has_title ex:12-work-title-01,
@@ -134,6 +170,12 @@ ex:12-work-title-02 a crm:E35_Title ;
     crm:P190_has_symbolic_content "Jaguar (Linnaeus, 1758)"@en,
         "Panthera onca (Linnaeus, 1758)"@it ;
     crm:P2_has_type aat:300417207 .
+
+ex:2-commission-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300417639 .
+
+ex:2-engraving-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300053225 .
 
 ex:2-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:2-manifestation ;
@@ -155,7 +197,7 @@ ex:2-item a lrmoo:F5_Item ;
         ex:2-item-identifier-02,
         ex:2-item-identifier-03 ;
     crm:P3_has_note "Panthera leo (Linnaeus, 1758) Diorama con tre leoni tassidermizzati Diorama with three taxidermized lions Manifattura Rowland Ward - Londra, inizio sec. XX – early 20th century Bologna, Collezione di Zoologia, Sistema Museale di Ateneo"^^rdfs:Literal ;
-    crm:P74_has_current_or_former_residence ex:1-room .
+    crm:P53_has_former_or_current_location ex:1-room .
 
 ex:2-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:sistema-museale-di-ateneo-di-bologna ;
@@ -181,8 +223,19 @@ ex:2-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:2-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:2-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:2-publishing-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300054686 .
+
+ex:2-publishing-place a crm:E53_Place .
+
 ex:2-room a crm:E53_Place ;
-    crm:P74i_is_current_or_former_residence_of ex:22-item .
+    crm:P53i_is_former_or_current_location_of ex:22-item .
+
+ex:2-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
 
 ex:2-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:2-expression ;
@@ -196,6 +249,12 @@ ex:2-work-title-02 a crm:E35_Title ;
     crm:P190_has_symbolic_content "Lion (Linnaeus, 1758)"@en,
         "Panthera leo (Linnaeus, 1758)"@it ;
     crm:P2_has_type aat:300417207 .
+
+ex:22-commission-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300417639 .
+
+ex:22-engraving-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300053225 .
 
 ex:22-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:22-manifestation ;
@@ -218,7 +277,7 @@ ex:22-item a lrmoo:F5_Item ;
         ex:22-item-identifier-02,
         ex:22-item-identifier-03 ;
     crm:P3_has_note "Dioscorides Pedanius De plantis epitome utilissima Francoforte sul Meno, Johann Feyerabend, 1586 Bologna, Biblioteca del Dipartimento di Scienze Biologiche, Geologiche e Ambientali, Fondo storico Bertoloni[AM4]"^^rdfs:Literal ;
-    crm:P74_has_current_or_former_residence ex:2-room .
+    crm:P53_has_former_or_current_location ex:2-room .
 
 ex:22-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:biblioteca-del-dipartimento-di-scienze-biologiche-geologiche-e-ambientali-bologna ;
@@ -245,6 +304,20 @@ ex:22-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:22-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:22-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:22-publishing-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:feyrabend-johann ;
+    crm:P2_has_type aat:300054686 .
+
+ex:22-publishing-place a crm:E53_Place ;
+    crm:P74i_is_current_or_former_residence_of ex:feyrabend-johann .
+
+ex:22-translation-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:mattioli-pietro-andrea ;
+    crm:P2_has_type aat:300069831 .
+
 ex:22-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:22-expression ;
     crm:P102_has_title ex:22-work-title-01,
@@ -258,6 +331,12 @@ ex:22-work-title-02 a crm:E35_Title ;
     crm:P190_has_symbolic_content "A highly useful compendium of plants"@en,
         "De plantis epitome utilissima"@it ;
     crm:P2_has_type aat:300417207 .
+
+ex:3-commission-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300417639 .
+
+ex:3-engraving-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300053225 .
 
 ex:3-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:3-manifestation ;
@@ -279,7 +358,7 @@ ex:3-item a lrmoo:F5_Item ;
         ex:3-item-identifier-02,
         ex:3-item-identifier-03 ;
     crm:P3_has_note "Aristoteles De Historia Animalium lib. 9 Venezia, Girolamo Scoto, 1545 BUB, A.V.GG.VII.28"^^rdfs:Literal ;
-    crm:P74_has_current_or_former_residence ex:1-room .
+    crm:P53_has_former_or_current_location ex:1-room .
 
 ex:3-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:bub ;
@@ -307,9 +386,22 @@ ex:3-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:3-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:3-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:3-publishing-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:scoto-girolamo ;
+    crm:P2_has_type aat:300054686 .
+
+ex:3-publishing-place a crm:E53_Place ;
+    crm:P74i_is_current_or_former_residence_of ex:scoto-girolamo .
+
 ex:3-room a crm:E53_Place ;
-    crm:P74i_is_current_or_former_residence_of ex:pta-1-item,
+    crm:P53i_is_former_or_current_location_of ex:pta-1-item,
         ex:pta-item .
+
+ex:3-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
 
 ex:3-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:3-expression ;
@@ -324,6 +416,12 @@ ex:3-work-title-02 a crm:E35_Title ;
     crm:P190_has_symbolic_content "The History of Animals"@en,
         "De Historia Animalium"@it ;
     crm:P2_has_type aat:300417207 .
+
+ex:5-commission-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300417639 .
+
+ex:5-engraving-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300053225 .
 
 ex:5-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:5-manifestation ;
@@ -345,7 +443,7 @@ ex:5-item a lrmoo:F5_Item ;
         ex:5-item-identifier-02,
         ex:5-item-identifier-03 ;
     crm:P3_has_note "Dioscorides Pedanius De Medica Materia Firenze, Filippo Giunta eredi, 1523 BUB, A.IV.H.I.27"^^rdfs:Literal ;
-    crm:P74_has_current_or_former_residence ex:1-room .
+    crm:P53_has_former_or_current_location ex:1-room .
 
 ex:5-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:bub ;
@@ -372,6 +470,19 @@ ex:5-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:5-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:5-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:5-publishing-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:giunta-filippo ;
+    crm:P2_has_type aat:300054686 .
+
+ex:5-publishing-place a crm:E53_Place ;
+    crm:P74i_is_current_or_former_residence_of ex:giunta-filippo .
+
+ex:5-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
+
 ex:5-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:5-expression ;
     crm:P102_has_title ex:5-work-title-01,
@@ -388,6 +499,12 @@ ex:5-work-title-02 a crm:E35_Title ;
 
 ex:africa a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
+
+ex:alamanni-luigi a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500714480> .
+
+ex:aldrovandi-ulisse a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/100190422> .
 
 ex:amerigo_vespucci a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
@@ -416,6 +533,9 @@ ex:bradipo a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
 
 ex:bub a crm:E39_Actor .
+
+ex:coriolano-cristoforo a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500043052> .
 
 ex:de-historia-animalium-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:de-historia-animalium-manifestation .
@@ -455,14 +575,37 @@ ex:erbe_medicinali a crm:E73_Information_Object ;
 ex:europa a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
 
+ex:feyrabend-johann a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/2399145857094322922033> ;
+    crm:P74_has_current_or_former_residence ex:22-publishing-place .
+
 ex:formichiere a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
+
+ex:galle-philip a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500016136> ;
+    crm:P74_has_current_or_former_residence ex:l1-publishing-place .
+
+ex:galle-philip-galle-theodor-collaert-jan a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://vocab.getty.edu/page/ulan/500016136> .
 
 ex:giaguaro a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
 
+ex:giunta-filippo a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/79080779> ;
+    crm:P74_has_current_or_former_residence ex:5-publishing-place .
+
 ex:gruppo_di_cannibali a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
+
+ex:l1-commission-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:alamanni-luigi ;
+    crm:P2_has_type aat:300417639 .
+
+ex:l1-engraving-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:galle-philip-galle-theodor-collaert-jan ;
+    crm:P2_has_type aat:300053225 .
 
 ex:l1-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:l1-manifestation ;
@@ -490,7 +633,7 @@ ex:l1-item a lrmoo:F5_Item ;
         ex:l1-item-identifier-02,
         ex:l1-item-identifier-03 ;
     crm:P3_has_note "Amerigo Vespucci sveglia l’America Amerigo Vespucci awakens a sleeping America In Jan van del Straet (Stradano), Nova Reperta, c. 1589 – c.1593, Antwerp Amsterdam, Rijksmuseum"^^rdfs:Literal ;
-    crm:P74_has_current_or_former_residence ex:1-room .
+    crm:P53_has_former_or_current_location ex:1-room .
 
 ex:l1-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:rijksmuseum ;
@@ -516,6 +659,19 @@ ex:l1-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:l1-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:l1-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:l1-publishing-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:galle-philip ;
+    crm:P2_has_type aat:300054686 .
+
+ex:l1-publishing-place a crm:E53_Place ;
+    crm:P74i_is_current_or_former_residence_of ex:galle-philip .
+
+ex:l1-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
+
 ex:l1-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:l1-expression ;
     crm:P102_has_title ex:l1-work-title-01,
@@ -536,7 +692,12 @@ ex:leone a crm:E73_Information_Object ;
 ex:mar_mediterraneo a crm:E73_Information_Object ;
     crm:P2_has_type aat:300404126 .
 
+ex:mattioli-pietro-andrea a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/61549376> .
+
 ex:museo-di-palazzo-poggi a crm:E39_Actor .
+
+ex:naturaliter a crm:E39_Actor .
 
 ex:nova-reperta-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:nova-reperta-manifestation .
@@ -550,6 +711,14 @@ ex:nova-reperta-manifestation a lrmoo:F3_Manifestation ;
 ex:nova-reperta-work a lrmoo:F1_Work ;
     lrmoo:R10_has_member ex:l1-work ;
     lrmoo:R3_is_realised_in ex:nova-reperta-expression .
+
+ex:pta-1-commission-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:aldrovandi-ulisse ;
+    crm:P2_has_type aat:300417639 .
+
+ex:pta-1-engraving-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:coriolano-cristoforo ;
+    crm:P2_has_type aat:300053225 .
 
 ex:pta-1-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:pta-1-manifestation ;
@@ -571,7 +740,7 @@ ex:pta-1-item a lrmoo:F5_Item ;
         ex:pta-1-item-identifier-03 ;
     crm:P3_has_note "Passer Indicus macrourus alius sec. XVI 16th century Bologna, Museo di Palazzo Poggi, Sistema Museale di Ateneo"^^rdfs:Literal ;
     crm:P46i_forms_part_of ex:pta-item ;
-    crm:P74_has_current_or_former_residence ex:3-room .
+    crm:P53_has_former_or_current_location ex:3-room .
 
 ex:pta-1-item-curation a crm:E7_Activity ;
     crm:P14_carried_out_by ex:museo-di-palazzo-poggi ;
@@ -597,6 +766,17 @@ ex:pta-1-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:pta-1-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:pta-1-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:pta-1-publishing-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300054686 .
+
+ex:pta-1-publishing-place a crm:E53_Place .
+
+ex:pta-1-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
+
 ex:pta-1-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:pta-1-expression ;
     crm:P102_has_title ex:pta-1-work-title-01,
@@ -610,6 +790,13 @@ ex:pta-1-work-title-02 a crm:E35_Title ;
     crm:P190_has_symbolic_content "Long-tail Indian sparrow"@en,
         "Passer Indicus macrourus alius"@it ;
     crm:P2_has_type aat:300417207 .
+
+ex:pta-commission-activity a crm:E7_Activity ;
+    crm:P14_carried_out_by ex:aldrovandi-ulisse ;
+    crm:P2_has_type aat:300417639 .
+
+ex:pta-engraving-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300053225 .
 
 ex:pta-expression a lrmoo:F2_Expression ;
     lrmoo:R4i_is_embodied_in ex:pta-manifestation ;
@@ -631,7 +818,7 @@ ex:pta-item a lrmoo:F5_Item ;
         ex:pta-item-identifier-03 ;
     crm:P3_has_note "Matrici xilografiche disegnate o incise per la stampa, dal laboratorio di Ulisse Aldrovandi Painted and carved Xilographic matrices for printing, from Ulisse Aldrovandi’s workshp sec. XVI 16th century Bologna, Museo di Palazzo Poggi, Sistema Museale di Ateneo"^^rdfs:Literal ;
     crm:P46_is_composed_of ex:pta-1-item ;
-    crm:P74_has_current_or_former_residence ex:3-room .
+    crm:P53_has_former_or_current_location ex:3-room .
 
 ex:pta-item-curation a crm:E7_Activity ;
     crm:P16_used_specific_object ex:pta-item ;
@@ -656,6 +843,17 @@ ex:pta-manifestation-license a crm:E73_Information_Object ;
     crm:P67_refers_to ex:pta-manifestation ;
     crm:P70i_is_documented_in <http://rightsstatements.org/vocab/InC/1.0/> .
 
+ex:pta-preparation-activity-01 a crm:E7_Activity ;
+    crm:P2_has_type aat:300077565 .
+
+ex:pta-publishing-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300054686 .
+
+ex:pta-publishing-place a crm:E53_Place .
+
+ex:pta-translation-activity a crm:E7_Activity ;
+    crm:P2_has_type aat:300069831 .
+
 ex:pta-work a lrmoo:F1_Work ;
     lrmoo:R3_is_realised_in ex:pta-expression ;
     crm:P102_has_title ex:pta-work-title-01,
@@ -669,7 +867,14 @@ ex:pta-work-title-02 a crm:E35_Title ;
         "Matrici xilografiche disegnate o incise per la stampa"@it ;
     crm:P2_has_type aat:300417207 .
 
+ex:riario-raffaelo a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/25474452> .
+
 ex:rijksmuseum a crm:E39_Actor .
+
+ex:scoto-girolamo a crm:E39_Actor ;
+    crm:P70i_is_documented_in <http://viaf.org/viaf/13137489> ;
+    crm:P74_has_current_or_former_residence ex:3-publishing-place .
 
 ex:sistema-museale-di-ateneo-di-bologna a crm:E39_Actor .
 

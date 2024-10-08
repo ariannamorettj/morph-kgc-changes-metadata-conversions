@@ -761,3 +761,252 @@ mappings:
             - parameter: idlab-fn:param_suffix
               value: "-item"
           template: "ex:$(o)"
+
+
+  aldrovandi_translator:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_author_name
+      parameters:
+        - parameter: idlab-fn:param_author_name
+          value: $(Traduttore)
+      template: "ex:$(s)"  # Combina il prefisso 'ex:' con il risultato della UDF
+    po:
+      - [ a, "crm:E39_Actor" ]
+      - p: crm:P70i_is_documented_in
+        o:
+          function: idlab-fn:extract_documented_in_iri
+          parameters:
+            - parameter: idlab-fn:p_author_name
+              value: $(Traduttore)
+          template: "ex:$(o)"  # Utilizza l'IRI estratto dalla UDF
+
+  expression_translation_activity:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-translation-activity"
+      template: "ex:$(s)"
+
+    po:
+      - [ a, "crm:E7_Activity" ]
+      - p: crm:P14_carried_out_by
+        o:
+          function: idlab-fn:normalize_author_name
+          parameters:
+            - parameter: idlab-fn:param_author_name
+              value: $(Traduttore)
+          template: "ex:$(o)"  # Combina il prefisso 'ex:' con il risultato della UDF
+      - [ crm:P2_has_type, "aat:300069831" ]
+
+
+  aldrovandi_incisor:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_author_name
+      parameters:
+        - parameter: idlab-fn:param_author_name
+          value: $(Incisore)
+      template: "ex:$(s)"  # Combina il prefisso 'ex:' con il risultato della UDF
+    po:
+      - [ a, "crm:E39_Actor" ]
+      - p: crm:P70i_is_documented_in
+        o:
+          function: idlab-fn:extract_documented_in_iri
+          parameters:
+            - parameter: idlab-fn:p_author_name
+              value: $(Incisore)
+          template: "ex:$(o)"  # Utilizza l'IRI estratto dalla UDF
+
+  expression_incision_activity:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-engraving-activity"
+      template: "ex:$(s)"
+
+    po:
+      - [ a, "crm:E7_Activity" ]
+      - p: crm:P14_carried_out_by
+        o:
+          function: idlab-fn:normalize_author_name
+          parameters:
+            - parameter: idlab-fn:param_author_name
+              value: $(Incisore)
+          template: "ex:$(o)"  # Combina il prefisso 'ex:' con il risultato della UDF
+      - [ crm:P2_has_type, "aat:300053225" ]
+
+
+  publisher:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_author_name
+      parameters:
+        - parameter: idlab-fn:param_author_name
+          value: $(Editore)
+      template: "ex:$(s)"
+    po:
+      - [ a, "crm:E39_Actor" ]  # Definiamo l'editore come attore
+      - p: crm:P70i_is_documented_in
+        o:
+          function: idlab-fn:extract_documented_in_iri
+          parameters:
+            - parameter: idlab-fn:p_author_name
+              value: $(Editore)
+          template: "ex:$(o)"
+      - p: crm:P74_has_current_or_former_residence
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-publishing-place"
+          template: "ex:$(o)"
+
+  publishing_activity:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-publishing-activity"
+      template: "ex:$(s)"
+    po:
+      - [ a, "crm:E7_Activity" ]  # Definiamo l'attività come evento
+      - [ crm:P2_has_type, "aat:300054686" ]  # Tipo di attività: Publishing
+      - p: crm:P14_carried_out_by
+        o:
+          function: idlab-fn:normalize_author_name
+          parameters:
+            - parameter: idlab-fn:param_author_name
+              value: $(Editore)
+          template: "ex:$(o)"  # Colleghiamo l'editore all'attività
+
+  publishing_place:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-publishing-place"
+      template: "ex:$(s)"
+    po:
+      - [ a, "crm:E53_Place" ]  # Definiamo il luogo come entità geografica
+      - p: crm:P74i_is_current_or_former_residence_of
+        o:
+          function: idlab-fn:normalize_author_name
+          parameters:
+            - parameter: idlab-fn:param_author_name
+              value: $(Editore)
+          template: "ex:$(o)"  # Definiamo il luogo come possibile residenza dell'editore
+
+
+  preparer:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_author_name
+      parameters:
+        - parameter: idlab-fn:param_author_name
+          value: $(Preparatore museale)
+      template: "ex:$(s)"  # Combina il prefisso 'ex:' con il risultato della UDF
+    po:
+      - [ a, "crm:E39_Actor" ]
+      - p: crm:P70i_is_documented_in
+        o:
+          function: idlab-fn:extract_documented_in_iri
+          parameters:
+            - parameter: idlab-fn:p_author_name
+              value: $(Preparatore museale)
+          template: "ex:$(o)"  # Utilizza l'IRI estratto dalla UDF
+
+  # Mapping per l'attività di preparazione
+  preparation_activity:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-preparation-activity-01"
+      template: "ex:$(s)"  # Normalizza e aggiunge un suffisso all'attività
+    po:
+      - [ a, "crm:E7_Activity" ]  # Definiamo l'attività come attività CRM
+      - p: crm:P14_carried_out_by
+        o:
+          function: idlab-fn:normalize_author_name
+          parameters:
+            - parameter: idlab-fn:param_author_name
+              value: $(Preparatore museale)
+          template: "ex:$(o)"  # Colleghiamo l'attività al preparatore
+      - [ crm:P2_has_type, "aat:300077565" ]
+
+
+  # Mapping per il Committente come attore
+  commissioner:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_author_name
+      parameters:
+        - parameter: idlab-fn:param_author_name
+          value: $(Committente)
+      template: "ex:$(s)"  # Normalizza il nome del committente
+    po:
+      - [ a, "crm:E39_Actor" ]  # Definiamo il committente come attore
+      - p: crm:P70i_is_documented_in
+        o:
+          function: idlab-fn:extract_documented_in_iri
+          parameters:
+            - parameter: idlab-fn:p_author_name
+              value: $(Committente)
+          template: "ex:$(o)"  # Utilizza l'IRI estratto dalla UDF
+
+  # Mapping per l'attività di commissione
+  commission_activity:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-commission-activity"
+      template: "ex:$(s)"  # Normalizza e aggiunge un suffisso all'attività
+    po:
+      - [ a, "crm:E7_Activity" ]  # Definiamo l'attività come attività CRM
+      - p: crm:P14_carried_out_by
+        o:
+          function: idlab-fn:normalize_author_name
+          parameters:
+            - parameter: idlab-fn:param_author_name
+              value: $(Committente)
+          template: "ex:$(o)"  # Colleghiamo l'attività al committente
+      - [ crm:P2_has_type, "aat:300417639" ]
+
+# GESTIONE IDENTIFICATIVI ULAN E VIAF
+# PROPRIETà RECIPROCHE
+# COME SI COLLEGANO GLI ATTORI ALLE ATTIVITà ALLE ENTITà???

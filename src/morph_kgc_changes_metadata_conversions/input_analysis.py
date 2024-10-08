@@ -22,7 +22,7 @@ def unique_values_from_csv(file_path, column_name):
 
 # input file and column name
 csv_file_path = 'src/morph_kgc_changes_metadata_conversions/metadata_aldrovandi.csv'
-column_name = 'Relazione'
+column_name = 'Consistenza'
 
 # use the function
 try:
