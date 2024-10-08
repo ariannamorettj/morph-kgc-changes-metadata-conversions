@@ -14,23 +14,61 @@ prefixes:
   morph-kgc: "https://github.com/morph-kgc/morph-kgc/function/built-in.ttl#"
   grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
   idlab-fn: "http://example.com/idlab/function/"
+  idlab-fn-m: "https://w3id.org/imec/idlab/function-mapping#"
+
 
 mappings:
   expression_creation:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-expression-creation"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-expression-creation"
+      template: "ex:$(s)"
+
     po:
       - [ a, "lrmoo:F28_Expression_Creation" ]
-      - [ crm:P9_consists_of, "ex:$(NR)-expression-creation-activity-01" ]
+      - p: crm:P9_consists_of
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-expression-creation-activity-01"
+          template: "ex:$(o)"
+
       - p: crm:P32_used_general_technique
         o:
           function: idlab-fn:convert_to_aat
           parameters:
             - parameter: idlab-fn:param_tecnica
               value: $(Tecnica)
-      - [ lrmoo:R19_created_a_realisation_of, "ex:$(NR)-work" ]
-      - [ lrmoo:R17_created, "ex:$(NR)-expression" ]
+
+      - p: lrmoo:R19_created_a_realisation_of
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-work"
+          template: "ex:$(o)"
+
+      - p: lrmoo:R17_created
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-expression"
+          template: "ex:$(o)"
+
       - [ crm:P4_has_time-span, "ex:$(Data)" ]
 
   aldrovandi_actor:
@@ -55,7 +93,15 @@ mappings:
   expression_creation_activity:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-expression-creation-activity-01"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-expression-creation-activity-01"
+      template: "ex:$(s)"
+
     po:
       - [ a, "crm:E7_Activity" ]
       - p: crm:P14_carried_out_by
@@ -98,19 +144,61 @@ mappings:
   work_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-work"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-work"
+      template: "ex:$(s)"
+
     po:
       - [ a, "lrmoo:F1_Work" ]
-      - [ crm:P102_has_title, "ex:$(NR)-work-title-01" ]
-      - [ crm:P102_has_title, "ex:$(NR)-work-title-02" ]
-      - [ lrmoo:R3_is_realised_in, "ex:$(NR)-expression" ]
+      - p: crm:P102_has_title
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-work-title-01"
+          template: "ex:$(o)"
+
+      - p: crm:P102_has_title
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-work-title-02"
+          template: "ex:$(o)"
+
+      - p: lrmoo:R3_is_realised_in
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-expression"
+          template: "ex:$(o)"
 
   # an original title (aat:300417204) or an exhibition title (aat:300417207)
 
   work_title_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-work-title-01"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-work-title-01"
+      template: "ex:$(s)"
+
     po:
       - [ a, "crm:E35_Title" ]
       - [ crm:P2_has_type, "aat:300417204" ]
@@ -125,7 +213,15 @@ mappings:
   english_and_exhibition_title_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-work-title-02"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-work-title-02"
+      template: "ex:$(s)"
+
     po:
       - [ a, "crm:E35_Title" ]
       - [ crm:P2_has_type, "aat:300417207" ]
@@ -141,10 +237,18 @@ mappings:
   expression_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-expression"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-expression"
+      template: "ex:$(s)"
+
     po:
       - [ a, "lrmoo:F2_Expression" ]
-      - p: "crm:P129_is_about"
+      - p: crm:P129_is_about
         o:
           # Passaggio 2: Normalizzare e convertire in IRI
           - function: idlab-fn:normalize_and_convert_to_iri
@@ -158,8 +262,16 @@ mappings:
                       value: ";"
                     - parameter: grel:valueParam
                       value: $(Soggetti)
-      - p: "lrmoo:R4i_is_embodied_in"
-        o: "ex:$(NR)-manifestation"
+
+      - p: lrmoo:R4i_is_embodied_in
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-manifestation"
+          template: "ex:$(o)"
 
 
   subject_mapping:
@@ -186,7 +298,14 @@ mappings:
   manifestation_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-manifestation"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-manifestation"
+      template: "ex:$(s)"
     po:
       - [ a, "lrmoo:F3_Manifestation" ]
       - p: crm:P2_has_type
@@ -195,17 +314,40 @@ mappings:
           parameters:
             - parameter: idlab-fn:param_documentary_type
               value: $(Tipologia documentaria)
-      - [ lrmoo:R7i_is_exemplified_by, "ex:$(NR)-item" ]
+      - p: lrmoo:R7i_is_exemplified_by
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-item"
+          template: "ex:$(o)"
 
 
   manifestation_license_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-manifestation-license"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-manifestation-license"
+      template: "ex:$(s)"
     po:
       - [ a, "crm:E73_Information_Object" ]
       - [ crm:P2_has_type, "aat:300435434" ]
-      - [ crm:P67_refers_to, "ex:$(NR)-manifestation" ]
+      - p: crm:P67_refers_to
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-manifestation"
+          template: "ex:$(o)"
       - [ crm:P70i_is_documented_in, "<http://rightsstatements.org/vocab/InC/1.0/>" ]
 
   opera_parente_work_mapping:
@@ -221,7 +363,15 @@ mappings:
       template: "ex:$(s)"
     po:
       - [ a, "lrmoo:F1_Work" ]
-      - [ lrmoo:R10_has_member, "ex:$(NR)-work" ]
+      - p: lrmoo:R10_has_member
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-work"
+          template: "ex:$(o)"
       - p: lrmoo:R3_is_realised_in
         o:
           function: idlab-fn:normalize_and_suffix
@@ -338,6 +488,76 @@ mappings:
         o:
           value: $(Didascalia)
           datatype: rdfs:Literal
+      - p: crm:P53_has_former_or_current_location
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(Sala mostra)
+            - parameter: idlab-fn:param_suffix
+              value: "-room"
+          template: "ex:$(o)"
+
+      # CONDITIONAL - Parte di
+      - p: crm:P46i_forms_part_of
+        o:
+          function: idlab-fn:conditional_normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:numero_collegato
+              value: $(NR collegato)
+            - parameter: idlab-fn:suffisso
+              value: "-item"
+            - parameter: idlab-fn:relazione
+              value: $(Relazione)
+            - parameter: idlab-fn:relazione_target
+              value: "parte di"
+          template: "ex:$(o)"
+
+
+#      - p: crm:P46i_forms_part_of
+#        o:
+#          - function: idlab-fn:normalize_and_suffix
+#            parameters:
+#              - parameter: idlab-fn:param_name
+#                value: $(NR collegato)
+#              - parameter: idlab-fn:param_suffix
+#                value: "-item"
+#            template: "ex:$(o)"
+#        condition:
+#          function: idlab-fn:equal
+#          parameters:
+#            - [grel:valueParameter, "$(Relazione)"]
+#            - [grel:valueParameter2, "parte di"]
+
+      # CONDITIONAL - Rappresenta
+      - p: crm:P62_depicts
+        o:
+          function: idlab-fn:conditional_normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:numero_collegato
+              value: $(NR collegato)
+            - parameter: idlab-fn:suffisso
+              value: "-item"
+            - parameter: idlab-fn:relazione
+              value: $(Relazione)
+            - parameter: idlab-fn:relazione_target
+              value: "rappresenta"
+          template: "ex:$(o)"
+
+#      - p: crm:P62_depicts
+#        o:
+#          - function: idlab-fn:normalize_and_suffix
+#            parameters:
+#              - parameter: idlab-fn:param_name
+#                value: $(NR collegato)
+#              - parameter: idlab-fn:param_suffix
+#                value: "-item"
+#            template: "ex:$(o)"
+#        condition:
+#          function: idlab-fn:equal
+#          parameters:
+#            - [grel:valueParameter, "$(Relazione)"]
+#            - [grel:valueParameter2, "rappresenta"]
 
   identifier_mapping:
     sources:
@@ -358,10 +578,91 @@ mappings:
           value: $(NR)
           datatype: rdfs:Literal
 
+
+  related_item_mapping:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR collegato)
+        - parameter: idlab-fn:param_suffix
+          value: "-item"
+      template: "ex:$(s)"
+    po:
+      - [ a, "lrmoo:F5_Item" ]
+      - p: crm:P1_is_identified_by
+        o:
+          - function: idlab-fn:normalize_and_suffix
+            parameters:
+              - parameter: idlab-fn:param_name
+                value: $(NR collegato)
+              - parameter: idlab-fn:param_suffix
+                value: "-item-identifier-01"
+            template: "ex:$(o)"
+
+      # CONDITIONAL - è rappresentato da
+      - p: crm:P62i_is_depicted_by
+        o:
+          - function: idlab-fn:conditional_normalize_and_suffix
+            parameters:
+              - parameter: idlab-fn:numero_collegato
+                value: $(NR)
+              - parameter: idlab-fn:suffisso
+                value: "-item"
+              - parameter: idlab-fn:relazione
+                value: $(Relazione)
+              - parameter: idlab-fn:relazione_target
+                value: "rappresenta"
+            template: "ex:$(o)"
+
+      # CONDITIONAL - è composto da
+      - p: crm:P46_is_composed_of
+        o:
+          - function: idlab-fn:conditional_normalize_and_suffix
+            parameters:
+              - parameter: idlab-fn:numero_collegato
+                value: $(NR)
+              - parameter: idlab-fn:suffisso
+                value: "-item"
+              - parameter: idlab-fn:relazione
+                value: $(Relazione)
+              - parameter: idlab-fn:relazione_target
+                value: "parte di"
+            template: "ex:$(o)"
+
+
+  identifier_related_item_mapping:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR collegato)
+        - parameter: idlab-fn:param_suffix
+          value: "-item-identifier-01"
+      template: "ex:$(s)"
+    po:
+      - [ a, "crm:E42_Identifier" ]
+      - [ crm:P2_has_type, "aat:300312355" ]
+      - p: crm:P190_has_symbolic_content
+        o:
+          value: $(NR collegato)
+          datatype: rdfs:Literal
+
   identifier_mapping_volume:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-item-identifier-02"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-item-identifier-02"
+      template: "ex:$(s)"
     po:
       - [ a, crm:E42_Identifier ]
       - [ crm:P2_has_type, aat:300445021 ]
@@ -373,7 +674,14 @@ mappings:
   identifier_mapping_03:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-item-identifier-03"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-item-identifier-03"
+      template: "ex:$(s)"
     po:
       - [ a, "crm:E42_Identifier" ]
       - [ crm:P2_has_type, "aat:300404704" ]
@@ -384,11 +692,28 @@ mappings:
   curation_activity_mapping:
     sources:
       - 'sample_input_file.csv~csv'
-    s: "ex:$(NR)-item-curation"
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(NR)
+        - parameter: idlab-fn:param_suffix
+          value: "-item-curation"
+      template: "ex:$(s)"
     po:
       - [ a, "crm:E7_Activity" ]
       - [ crm:P2_has_type, "aat:300054277" ]
-      - [ crm:P16_used_specific_object, "ex:$(NR)-item" ]
+
+      - p: crm:P16_used_specific_object
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-item"
+          template: "ex:$(o)"
+
       - p: crm:P14_carried_out_by
         o:
           function: idlab-fn:normalize_and_suffix
@@ -412,3 +737,27 @@ mappings:
       template: "ex:$(s)"
     po:
       - [ a, "crm:E39_Actor" ]
+
+
+  room_mapping:
+    sources:
+      - 'sample_input_file.csv~csv'
+    s:
+      function: idlab-fn:normalize_and_suffix
+      parameters:
+        - parameter: idlab-fn:param_name
+          value: $(Sala mostra)
+        - parameter: idlab-fn:param_suffix
+          value: "-room"
+      template: "ex:$(s)"
+    po:
+      - [ a, "crm:E53_Place" ]
+      - p: crm:P53i_is_former_or_current_location_of
+        o:
+          function: idlab-fn:normalize_and_suffix
+          parameters:
+            - parameter: idlab-fn:param_name
+              value: $(NR)
+            - parameter: idlab-fn:param_suffix
+              value: "-item"
+          template: "ex:$(o)"

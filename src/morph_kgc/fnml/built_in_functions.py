@@ -494,6 +494,24 @@ def convert_documentary_type_to_aat(documentary_type):
 
 
 @udf(
+    fun_id="http://example.com/idlab/function/normalize_id_number",
+    param_name="http://example.com/idlab/function/id_number",
+)
+def normalize_id_number(param_name, suffix):
+    # strip whitespace
+    param_name = param_name.replace(" ", "")
+
+    # to upper
+    normalized_name = param_name.upper()
+
+    # remove accents
+    normalized_name = unicodedata.normalize('NFKD', normalized_name).encode('ascii', 'ignore').decode('ascii')
+
+    # return the URI with the suffix
+    return normalized_name
+
+
+@udf(
     fun_id="http://example.com/idlab/function/normalize_and_suffix",
     param_name="http://example.com/idlab/function/param_name",
     suffix="http://example.com/idlab/function/param_suffix"
@@ -530,5 +548,22 @@ def normalize_and_convert_to_iri(str_param):
     str_param = str_param.replace(' ', '_').lower()
     return [f"ex:{str_param}"]
 
+
+
+@udf(
+    fun_id="http://example.com/idlab/function/conditional_normalize_and_suffix",
+    numero_collegato="http://example.com/idlab/function/numero_collegato",
+    suffisso="http://example.com/idlab/function/suffisso",
+    relazione="http://example.com/idlab/function/relazione",
+    relazione_target="http://example.com/idlab/function/relazione_target"
+)
+def conditional_normalize_and_suffix(numero_collegato, suffisso, relazione, relazione_target):
+    # Se la relazione non è uguale a relazione_target, restituisce None
+    if relazione.strip() != relazione_target.strip():
+        return None
+    # Altrimenti normalizza numero_collegato e suffisso, e li unisce
+    norm_iri = normalize_and_suffix(numero_collegato, suffisso)
+
+    return norm_iri
 
 

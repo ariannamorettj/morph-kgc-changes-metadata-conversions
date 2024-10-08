@@ -22,7 +22,7 @@ def unique_values_from_csv(file_path, column_name):
 
 # input file and column name
 csv_file_path = 'src/morph_kgc_changes_metadata_conversions/metadata_aldrovandi.csv'
-column_name = 'Tecnica'
+column_name = 'Relazione'
 
 # use the function
 try:
@@ -32,6 +32,28 @@ try:
         print(value)
 except Exception as e:
     print(f"Errore: {e}")
+
+
+def check_relation_and_nr_collegato(file_path):
+    # Leggi il file CSV in un dataframe
+    df = pd.read_csv(file_path)
+
+    # Verifica che le colonne 'Relazione' e 'NR collegato' esistano
+    if 'Relazione' not in df.columns or 'NR collegato' not in df.columns:
+        raise ValueError(f"Una delle colonne richieste ('Relazione', 'NR collegato') non esiste nel file CSV.")
+
+    # Filtra le righe dove 'Relazione' non è vuoto
+    filtered_df = df[df['Relazione'].notna()]
+
+    # Controlla che in queste righe 'NR collegato' non sia vuoto
+    missing_nr_collegato = filtered_df[filtered_df['NR collegato'].isna()]
+
+    # Se ci sono righe dove 'Relazione' ha valore ma 'NR collegato' è vuoto
+    if not missing_nr_collegato.empty:
+        print(f"Ci sono {len(missing_nr_collegato)} righe dove 'Relazione' ha un valore ma 'NR collegato' è vuoto.")
+        print(missing_nr_collegato[['Relazione', 'NR collegato']])
+    else:
+        print("Tutti i valori di 'Relazione' hanno 'NR collegato' non vuoto.")
 
 
 
@@ -78,3 +100,8 @@ print("docu_types_column_name1 trovati:", td_set1)
 print("in Tipologia opera parente but not in Tipologia documentaria", [x for x in td_set2 if x not in td_set1])
 print("in Tipologia documentaria but not in Tipologia opera parente", [x for x in td_set2 if x not in td_set1])
 
+# Percorso al file CSV
+csv_file_path = 'src/morph_kgc_changes_metadata_conversions/metadata_aldrovandi.csv'
+
+# Esegui la funzione
+check_relation_and_nr_collegato(csv_file_path)
