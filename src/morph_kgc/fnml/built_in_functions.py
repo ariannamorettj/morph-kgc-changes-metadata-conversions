@@ -289,7 +289,8 @@ def split_year_range_to_dates(string, position):
 
     # validate input format (YYYY-YYYY)
     if len(years) != 2:
-        raise ValueError("Expected a year range in the format 'YYYY-YYYY'")
+        return None
+        # raise ValueError("Expected a year range in the format 'YYYY-YYYY'")
 
     # whether to return the start or end year date
     if position.lower() == 'start':

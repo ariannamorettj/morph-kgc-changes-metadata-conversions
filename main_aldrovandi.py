@@ -8,7 +8,7 @@ from ruamel.yaml import YAML
 import re
 
 # caricamento CSV
-csv_file_path = "src/morph_kgc_changes_metadata_conversions/output_dir/cleaned_sample.csv"
+csv_file_path = "src/morph_kgc_changes_metadata_conversions/metadata_aldrovandi.csv"
 df = pd.read_csv(csv_file_path, delimiter=',', quotechar='"', encoding='utf-8')
 
 # NaN sostituiti con stringhe vuote
@@ -18,7 +18,7 @@ df = df.fillna('')
 df = df.applymap(lambda x: str(x) if pd.notna(x) else '')
 
 # sovrascrivere dataframe nuovo su file input
-preprocessed_csv_file_path = "src/morph_kgc_changes_metadata_conversions/output_dir/cleaned_sample.csv"
+preprocessed_csv_file_path = "src/morph_kgc_changes_metadata_conversions/metadata_aldrovandi.csv"
 df.to_csv(preprocessed_csv_file_path, index=False, quoting=1, encoding='utf-8')
 
 # configurazione
