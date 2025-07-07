@@ -1,0 +1,2612 @@
+{
+    "L1": {
+        "NR": "L1",
+        "OGGETTO": "Stampa Amerigo Vespucci in America",
+        "VETRINA": "",
+        "DIDASCALIA": "Amerigo Vespucci sveglia lAmerica",
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": "Nome 'lightbox 1 stradano'",
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "EXTID0": {
+        "NR": null,
+        "OGGETTO": "Grafica entrata",
+        "VETRINA": null,
+        "DIDASCALIA": null,
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "EXTID1": {
+        "NR": null,
+        "OGGETTO": "Pannelli",
+        "VETRINA": null,
+        "DIDASCALIA": null,
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": "Colori da invertire",
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "EXTID2": {
+        "NR": null,
+        "OGGETTO": "Grafica Codice Cospi",
+        "VETRINA": null,
+        "DIDASCALIA": null,
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "EXTID3": {
+        "NR": null,
+        "OGGETTO": "Grafica Mappa Benincasa",
+        "VETRINA": null,
+        "DIDASCALIA": null,
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "1": {
+        "NR": "1",
+        "OGGETTO": "Pergamena, carta nautica",
+        "VETRINA": "map",
+        "DIDASCALIA": "Carta nautica",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20240111-fa5nvpg07",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Federica Bonifazi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Nikon D7200 Nikor 50mm",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-05-08",
+                    "Data fine (specificare data mm-dd)": "2023-05-08"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-05-08",
+                    "Data fine (specificare data mm-dd)": "2023-05-09"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-22",
+                    "Data fine (specificare data mm-dd)": "2023-06-24"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-05",
+                    "Data fine (specificare data mm-dd)": "2023-07-06"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-06",
+                    "Data fine (specificare data mm-dd)": "2023-07-06"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2024-01-11",
+                    "Data fine (specificare data mm-dd)": "2024-01-11"
+                }
+            }
+        }
+    },
+    "2": {
+        "NR": "2",
+        "OGGETTO": "Diorama 3 leoni",
+        "VETRINA": "taxidermy animals",
+        "DIDASCALIA": "Panthera leo (Linnaeus, 1758)",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20231116-t4106pkmw",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "UNIBO DA",
+            "Persone responsabili acquisizione": "Mattia Sullini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Sony Alpha 7 I",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-11-10",
+                    "Data fine (specificare data mm-dd)": "2023-11-10"
+                }
+            }
+        }
+    },
+    "V1": {
+        "NR": "V1",
+        "OGGETTO": "Video San Girolamo",
+        "VETRINA": "multimedia",
+        "DIDASCALIA": "San Girolamo nel suo studio",
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "UNIBO DBC",
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "3": {
+        "NR": "3",
+        "OGGETTO": "Volume Aristotele",
+        "VETRINA": "volume",
+        "DIDASCALIA": "Aristoteles",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-9vj0k3ouy",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Laura Travaglini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-21",
+                    "Data fine (specificare data mm-dd)": "2023-04-26"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-11",
+                    "Data fine (specificare data mm-dd)": "2023-07-11"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-12",
+                    "Data fine (specificare data mm-dd)": "2023-07-12"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-12",
+                    "Data fine (specificare data mm-dd)": "2023-07-12"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-12",
+                    "Data fine (specificare data mm-dd)": "2023-07-12"
+                }
+            }
+        }
+    },
+    "4": {
+        "NR": "4",
+        "OGGETTO": "Volume Teofrasto",
+        "VETRINA": "volume",
+        "DIDASCALIA": "Theophrastus",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-o3sk3ytsa",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Laura Travaglini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-17",
+                    "Data fine (specificare data mm-dd)": "2023-04-17"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-21",
+                    "Data fine (specificare data mm-dd)": "2023-04-26"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-24",
+                    "Data fine (specificare data mm-dd)": "2023-07-24"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-24",
+                    "Data fine (specificare data mm-dd)": "2023-07-24"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-26",
+                    "Data fine (specificare data mm-dd)": "2023-07-26"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-26",
+                    "Data fine (specificare data mm-dd)": "2023-07-26"
+                }
+            }
+        }
+    },
+    "5": {
+        "NR": "5",
+        "OGGETTO": "Volume Medica Materia",
+        "VETRINA": "volume",
+        "DIDASCALIA": "Dioscorides Pedanius",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-otyna5qs5",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Laura Travaglini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-17",
+                    "Data fine (specificare data mm-dd)": "2023-04-17"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-21",
+                    "Data fine (specificare data mm-dd)": "2023-04-26"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-13",
+                    "Data fine (specificare data mm-dd)": "2023-07-13"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-14",
+                    "Data fine (specificare data mm-dd)": "2023-07-14"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-14",
+                    "Data fine (specificare data mm-dd)": "2023-07-14"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-14",
+                    "Data fine (specificare data mm-dd)": "2023-07-14"
+                }
+            }
+        }
+    },
+    "6": {
+        "NR": "6",
+        "OGGETTO": "Volume Naturae Historiarum",
+        "VETRINA": "volume",
+        "DIDASCALIA": "Plinius Secundus Gaius",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-6037tssbz",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Laura Travaglini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-17",
+                    "Data fine (specificare data mm-dd)": "2023-04-17"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-21",
+                    "Data fine (specificare data mm-dd)": "2023-04-26"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-07",
+                    "Data fine (specificare data mm-dd)": "2023-07-07"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-10",
+                    "Data fine (specificare data mm-dd)": "2023-07-10"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-11",
+                    "Data fine (specificare data mm-dd)": "2023-07-11"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-11",
+                    "Data fine (specificare data mm-dd)": "2023-07-11"
+                }
+            }
+        }
+    },
+    "7": {
+        "NR": "7",
+        "OGGETTO": "Carta coste America",
+        "VETRINA": "map",
+        "DIDASCALIA": "Profilo incompleto delle coste del continente americano",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-ia9cfb2eb",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Federica Bonifazi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Nikon D7200 Nikor 35mm",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-03",
+                    "Data fine (specificare data mm-dd)": "2023-04-03"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-05",
+                    "Data fine (specificare data mm-dd)": "2023-04-07"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-20",
+                    "Data fine (specificare data mm-dd)": "2023-07-20"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-21",
+                    "Data fine (specificare data mm-dd)": "2023-07-24"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-24",
+                    "Data fine (specificare data mm-dd)": "2023-07-24"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-24",
+                    "Data fine (specificare data mm-dd)": "2023-07-24"
+                }
+            }
+        }
+    },
+    "8": {
+        "NR": "8",
+        "OGGETTO": "Volume pagina mappa di Cusco",
+        "VETRINA": "V3",
+        "DIDASCALIA": "Mappa di Cusco",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-1noow3l38",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Federica Bonifazi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Nikon D7200 Nikor 35mm",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-03",
+                    "Data fine (specificare data mm-dd)": "2023-04-03"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-05",
+                    "Data fine (specificare data mm-dd)": "2023-04-07"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-27",
+                    "Data fine (specificare data mm-dd)": "2023-07-27"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-27",
+                    "Data fine (specificare data mm-dd)": "2023-07-27"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-27",
+                    "Data fine (specificare data mm-dd)": "2023-07-27"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-27",
+                    "Data fine (specificare data mm-dd)": "2023-07-27"
+                }
+            }
+        }
+    },
+    "9": {
+        "NR": "9",
+        "OGGETTO": "Volume De Orbo Novo",
+        "VETRINA": "V3",
+        "DIDASCALIA": "Pietro Martire dAnghiera",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-krza6s43x",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Federica Bonifazi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Nikon D7200 Nikor 35mm",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-03",
+                    "Data fine (specificare data mm-dd)": "2023-04-03"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-05",
+                    "Data fine (specificare data mm-dd)": "2023-04-07"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-17",
+                    "Data fine (specificare data mm-dd)": "2023-07-17"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-17",
+                    "Data fine (specificare data mm-dd)": "2023-07-18"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-18",
+                    "Data fine (specificare data mm-dd)": "2023-07-18"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-18",
+                    "Data fine (specificare data mm-dd)": "2023-07-18"
+                }
+            }
+        }
+    },
+    "10": {
+        "NR": "10",
+        "OGGETTO": "Volume Historia naturae Indie",
+        "VETRINA": "V3",
+        "DIDASCALIA": "Jos de Acosta",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-6hdd0d91i",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Federica Bonifazi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Nikon D7200 Nikor 35mm",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-03",
+                    "Data fine (specificare data mm-dd)": "2023-04-03"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-05",
+                    "Data fine (specificare data mm-dd)": "2023-04-07"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-18",
+                    "Data fine (specificare data mm-dd)": "2023-07-19"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-19",
+                    "Data fine (specificare data mm-dd)": "2023-07-19"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-19",
+                    "Data fine (specificare data mm-dd)": "2023-07-19"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-19",
+                    "Data fine (specificare data mm-dd)": "2023-07-19"
+                }
+            }
+        }
+    },
+    "11": {
+        "NR": "11",
+        "OGGETTO": "Volume pagina Tabacco",
+        "VETRINA": "V3",
+        "DIDASCALIA": "Tabacco",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-v287oms4a",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Federica Bonifazi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Nikon D7200 Nikor 35mm",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-03",
+                    "Data fine (specificare data mm-dd)": "2023-04-03"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-05",
+                    "Data fine (specificare data mm-dd)": "2023-04-07"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-28",
+                    "Data fine (specificare data mm-dd)": "2023-06-28"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-07",
+                    "Data fine (specificare data mm-dd)": "2023-07-07"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-07",
+                    "Data fine (specificare data mm-dd)": "2023-07-07"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-07",
+                    "Data fine (specificare data mm-dd)": "2023-07-07"
+                }
+            }
+        }
+    },
+    "V2": {
+        "NR": "V2",
+        "OGGETTO": "Video allegorie",
+        "VETRINA": "multimedia",
+        "DIDASCALIA": "Giovanni Domenico Tiepolo",
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "UNIBO DBC",
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "EXTID4": {
+        "NR": null,
+        "OGGETTO": "Grafica parete video",
+        "VETRINA": null,
+        "DIDASCALIA": null,
+        "STATO CORRENTE": null,
+        "LINK MOD": null,
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    },
+    "12": {
+        "NR": "12",
+        "OGGETTO": "Giaguaro tassidermizzato",
+        "VETRINA": "",
+        "DIDASCALIA": "Panthera onca (Linnaeus, 1758)",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20231031-jqf4h4il9",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "UNIBO DBC",
+            "Persone responsabili acquisizione": "Federica Collina",
+            "Tecnica di acquisizione": "Scanner Artec",
+            "Strumentazione di acquisizione": "Scanner Eva",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-04-03",
+                    "Data fine (specificare data mm-dd)": "2023-04-03"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-22",
+                    "Data fine (specificare data mm-dd)": "2023-06-22"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-22",
+                    "Data fine (specificare data mm-dd)": "2023-06-22"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-22",
+                    "Data fine (specificare data mm-dd)": "2023-06-22"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-22",
+                    "Data fine (specificare data mm-dd)": "2023-06-22"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-08-02",
+                    "Data fine (specificare data mm-dd)": "2023-08-02"
+                }
+            }
+        }
+    },
+    "13": {
+        "NR": "13",
+        "OGGETTO": "3 Quetzal tassidermizzati",
+        "VETRINA": "",
+        "DIDASCALIA": "Pharomachrus mocinno (De la Llave, 1832)",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20240201-szsapmta4",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Diego Ronchi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2024-01-19",
+                    "Data fine (specificare data mm-dd)": "2024-01-22"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2024-01-24",
+                    "Data fine (specificare data mm-dd)": "2024-01-30"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2024-01-30",
+                    "Data fine (specificare data mm-dd)": "2024-02-01"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2024-02-01",
+                    "Data fine (specificare data mm-dd)": "2024-02-01"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2024-02-01",
+                    "Data fine (specificare data mm-dd)": "2024-02-01"
+                }
+            }
+        }
+    },
+    "14": {
+        "NR": "14",
+        "OGGETTO": "Limulo tassidermizzato",
+        "VETRINA": "",
+        "DIDASCALIA": "Limulus polyphemus (Linnaeus, 1758)",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20231110-0yffexl0n",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "UNIBO DA",
+            "Persone responsabili acquisizione": "Mattia Sullini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Sony Alpha 7 I",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-05-08",
+                    "Data fine (specificare data mm-dd)": "2023-05-08"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-08-20",
+                    "Data fine (specificare data mm-dd)": "2023-08-20"
+                }
+            }
+        }
+    },
+    "15": {
+        "NR": "15",
+        "OGGETTO": "Iguana tassidermizzata",
+        "VETRINA": "",
+        "DIDASCALIA": "Ctenosaura similis (Gray, 1831)",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230818-o5oddag2l",
+        "NOTE": "modello SKETCHFAB: https://sketchfab.com/3d-models/green-iguana-217da036aae14762904ef4630023978b",
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-28",
+                    "Data fine (specificare data mm-dd)": "2023-07-28"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-07-28",
+                    "Data fine (specificare data mm-dd)": "2023-07-28"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-08-05",
+                    "Data fine (specificare data mm-dd)": "2023-08-05"
+                }
+            }
+        }
+    },
+    "16": {
+        "NR": "16",
+        "OGGETTO": "Ara tassidermizzata",
+        "VETRINA": "",
+        "DIDASCALIA": "Ara macao (Linnaeus, 1758)",
+        "STATO CORRENTE": "https://aton.ispc.cnr.it/s/aldrovandi/20231031-2k7jlokwy",
+        "LINK MOD": "https://sketchfab.com/3d-models/cuban-macaw-nhmw-zoo-vs-50796-52348a29605a4136a0e807942d3c12a6",
+        "NOTE": "si  deciso di usare un modello di animale analogo",
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-10-24",
+                    "Data fine (specificare data mm-dd)": "2023-10-24"
+                }
+            }
+        }
+    },
+    "17": {
+        "NR": "17",
+        "OGGETTO": "Tucano tassidermizzato",
+        "VETRINA": "",
+        "DIDASCALIA": "Ramphastos toco (Statius Mller, 1776)",
+        "STATO CORRENTE": "https://aton.ispc.cnr.it/s/aldrovandi/20231024-ogj30iwnh",
+        "LINK MOD": "https://sketchfab.com/3d-models/jungle-day-22-of-sculptjanuary2019-a313530e34bc4b5ab152df14775e58aa",
+        "NOTE": "si  deciso di usare un modello di animale analogo",
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-10-20",
+                    "Data fine (specificare data mm-dd)": "2023-10-20"
+                }
+            }
+        }
+    },
+    "18": {
+        "NR": "18",
+        "OGGETTO": "Tacchino tassidermizzato",
+        "VETRINA": "",
+        "DIDASCALIA": "Meleagris gallopavo (Linneaus, 1758)",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230915-yjvfvo0sa",
+        "NOTE": "definitivo - eventualmente pu essere ulteriormente ottimizzata la topologia",
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Daniele Ferdani",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Canon Eos 6D - Lente 24-70 F2.8 L",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-09-14",
+                    "Data fine (specificare data mm-dd)": "2023-09-15"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-09-16",
+                    "Data fine (specificare data mm-dd)": "2023-09-16"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-09-15",
+                    "Data fine (specificare data mm-dd)": "2023-09-15"
+                }
+            }
+        }
+    },
+    "19": {
+        "NR": "19",
+        "OGGETTO": "Armadillo tassidermizzato",
+        "VETRINA": "",
+        "DIDASCALIA": "Dasypus novemcinctus (Linnaeus, 1757)",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20231110-7pl4plfbr",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "UNIBO DA",
+            "Persone responsabili acquisizione": "Mattia Sullini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Sony Alpha 7 I",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-05-08",
+                    "Data fine (specificare data mm-dd)": "2023-05-08"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-08-20",
+                    "Data fine (specificare data mm-dd)": "2023-08-20"
+                }
+            }
+        }
+    },
+    "20": {
+        "NR": "20",
+        "OGGETTO": "Codice mesoamericano",
+        "VETRINA": "",
+        "DIDASCALIA": "Codice Cospi, manoscritto divinatorio mesoamericano",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20230929-78yfjyjch",
+        "NOTE": "Oggetto modellato su riferimenti reali (dati BUB)",
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": null,
+            "Persone responsabili acquisizione": null,
+            "Tecnica di acquisizione": null,
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-09-25",
+                    "Data fine (specificare data mm-dd)": "2023-09-27"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-09-27",
+                    "Data fine (specificare data mm-dd)": "2023-09-29"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-09-29",
+                    "Data fine (specificare data mm-dd)": "2023-09-29"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-09-29",
+                    "Data fine (specificare data mm-dd)": "2023-09-29"
+                }
+            }
+        }
+    },
+    "21": {
+        "NR": "21",
+        "OGGETTO": "Dipinto Aldrovandi",
+        "VETRINA": "",
+        "DIDASCALIA": "Ritratto di Ulisse Aldrovandi",
+        "STATO CORRENTE": "5 - Esportato",
+        "LINK MOD": "https://aton.ispc.cnr.it/s/aldrovandi/20231024-t9m50ekpd",
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Federica Bonifazi",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": "Nikon D7200 Nikor 50mm",
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-03-24",
+                    "Data fine (specificare data mm-dd)": "2023-03-24"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-03-28",
+                    "Data fine (specificare data mm-dd)": "2023-03-29"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-14",
+                    "Data fine (specificare data mm-dd)": "2023-06-16"
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-14",
+                    "Data fine (specificare data mm-dd)": "2023-06-16"
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-16",
+                    "Data fine (specificare data mm-dd)": "2023-06-16"
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-06-16",
+                    "Data fine (specificare data mm-dd)": "2023-06-16"
+                }
+            }
+        }
+    },
+    "EXTID5": {
+        "NR": null,
+        "OGGETTO": "SOFFITTO",
+        "VETRINA": null,
+        "DIDASCALIA": "Soffitto affrescato della Stanza 1",
+        "STATO CORRENTE": "3 - Modellato",
+        "LINK MOD": null,
+        "NOTE": null,
+        "ACQUISIZIONE": {
+            "Istituto responsabile acquisizione": "CNR ISPC",
+            "Persone responsabili acquisizione": "Laura Travaglini",
+            "Tecnica di acquisizione": "Fotogrammetria",
+            "Strumentazione di acquisizione": null,
+            "Tempi di acquisizione": {
+                "Tempi di acquisizione": {
+                    "Data inizio (specificare data mm-dd)": "2023-03-24",
+                    "Data fine (specificare data mm-dd)": "2023-03-24"
+                }
+            }
+        },
+        "PROCESSAMENTO": {
+            "Istituto responsabile processamento": null,
+            "Persone responsabili processamento": null,
+            "Strumentazione di processamento": null,
+            "Tempi di processamento": {
+                "Tempi di processamento": {
+                    "Data inizio (specificare data mm-dd)": "2023-03-28",
+                    "Data fine (specificare data mm-dd)": "2023-03-29"
+                }
+            }
+        },
+        "MODELLAZIONE": {
+            "Istituto responsabile modellazione": null,
+            "Persone responsabili modellazione": null,
+            "Strumentazione di modellazione": null,
+            "Tempi di modellazione": {
+                "Tempi di modellazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "OTTIMIZZAZIONE": {
+            "Istituto responsabile ottimizzazione": null,
+            "Persone responsabili ottimizzazione": null,
+            "Strumentazione di ottimizzazione": null,
+            "Tempi di ottimizzazione": {
+                "Tempi di ottimizzazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "ESPORTAZIONE": {
+            "Istituto responsabile esportazione": null,
+            "Persone responsabili esportazione": null,
+            "Strumentazione di esportazione": null,
+            "Tempi di esportazione": {
+                "Tempi di esportazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "METADATAZIONE": {
+            "Istituto responsabile metadatazione": null,
+            "Persone responsabili metadatazione": null,
+            "Strumentazione di metadatazione": null,
+            "Tempi di metadatazione": {
+                "Tempi di metadatazione": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        },
+        "CARICAMENTO SU ATON": {
+            "Istituto responsabile caricamento": null,
+            "Persone responsabili caricamento": null,
+            "Strumentazione di caricamento": null,
+            "Tempi di caricamento": {
+                "Tempi di caricamento": {
+                    "Data inizio (specificare data mm-dd)": "",
+                    "Data fine (specificare data mm-dd)": ""
+                }
+            }
+        }
+    }
+}

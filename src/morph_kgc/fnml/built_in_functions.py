@@ -334,12 +334,12 @@ def pad_year(year_str):
     else:
         return str(y).zfill(4)
 
-
 @udf(
     fun_id="http://example.com/idlab/function/split_year_range_to_dates",
     string="http://example.com/idlab/function/param_string_e",
     position="http://example.com/idlab/function/param_position_e"
 )
+
 def split_year_range_to_dates(string, position):
     """
     Processa una stringa che rappresenta un intervallo di anni (o un singolo anno)
@@ -429,6 +429,34 @@ def retrieve_tool_type(tecnica):
     elif convert_to_aat(tecnica) == "aat:300053580":
         return "aat:300266792"
 
+# def split_year_range_to_dates(string, position):
+#     # strip + clean extra whitespace from input string
+#     string = string.strip()
+#
+#     if "-" in string:
+#         # split string at hyphen: separate start/end years
+#         years = re.split(r"\s*-\s*", string)
+#     else:
+#         # if only one year, it's both start and end year
+#         years = []
+#         year_start = string
+#         year_end = string
+#         years.append(year_start)
+#         years.append(year_end)
+#
+#     # validate input format (YYYY-YYYY)
+#     if len(years) != 2:
+#         return None
+#         # raise ValueError("Expected a year range in the format 'YYYY-YYYY'")
+#
+#     # whether to return the start or end year date
+#     if position.lower() == 'start':
+#         return years[0] + '-01-01T00:00:00Z'  # start of the year
+#     elif position.lower() == 'end':
+#         return years[1] + '-12-31T23:59:59Z'  # end of the year
+#     else:
+#         raise ValueError("Expected 'start' or 'end' for 'position' parameter")
+
 
 @udf(
     fun_id="http://example.com/idlab/function/convert_to_aat",
@@ -460,7 +488,7 @@ def convert_to_aat(tecnica):
         "Tassidermia": "aat:300053628",
         "Fotogrammetria": "aat:300053580",
         "Scanner artec": "aat:300391312",
-        "Scansione a proiezione di luce strutturata": "aat:300391312",
+        "Scansione a proiezione di luce strutturata": "aat:300391312"
     }
 
     # return mapped aat value, none if not present
@@ -501,6 +529,7 @@ def normalize_author_name(author_name):
 def extract_documented_in_iri(param_author_name=None):
     """
     Extracts the VIAF, ORCID or ULAN ID from the author's string and constructs the corresponding IRI.
+
     :param param_author_name: The string containing the author's name and the VIAF or ULAN ID.
     :return: The IRI corresponding to the VIAF or ULAN ID.
     """
@@ -533,7 +562,6 @@ def extract_documented_in_iri(param_author_name=None):
         orcid_id = orcid_match.group(1)
         return f"https://orcid.org/{orcid_id}"
 
-
     # return None if no ID was found
     return None
 
@@ -559,8 +587,8 @@ def extract_title(param_title_original=None):
     if match:
         title = match.group(1).strip()
         return title
-
     return param_title_original
+
 
 
 @udf(
@@ -653,7 +681,6 @@ def normalize_id_number(param_name, suffix):
     # return the URI with the suffix
     return normalized_name
 
-
 ## DA ELIMINARE E SOSTITUIRE CON NORMALIZE IRI E ADD/REMOVE STRING
 
 @udf(
@@ -691,35 +718,26 @@ def normalize_and_suffix(param_name, suffix):
     num_param='http://example.com/idlab/function/valueNum',
     parent_param='http://example.com/idlab/function/valueParent'
 )
-
 def normalize_and_convert_to_iri(str_param, type_param, num_param, parent_param=None):
-    # Rimuovi tutto ciò che è compreso tra parentesi tonde o quadre, inclusi gli stessi
+    # Rimuove tutto ciò che è compreso tra parentesi tonde o quadre, inclusi gli stessi
     str_param = re.sub(r"[\(\[].*?[\)\]]", "", str_param)
-
     str_param = str_param.strip().lower()
     str_param = unicodedata.normalize('NFKD', str_param).encode('ascii', 'ignore').decode('ascii')
     str_param = re.sub(r"\s+", " ", str_param)
     str_param = str_param.replace(' ', '_')
-    str_param = str_param.replace('"', '')
-    str_param = str_param.replace('.', '_')
-    str_param = str_param.strip('_')
+    str_param = str_param.replace('"', '').replace('.', '_').strip('_')
     str_param = re.sub(r"_+", "_", str_param)
+
     if not parent_param:
         if num_param == "":
-            to_return = "".join([prefisso, type_param, "/", str_param, "/", versione])
-            return to_return
+            return f"{prefisso}{type_param}/{str_param}/{versione}"
         else:
-            to_return = "".join([prefisso, type_param, "/", str_param, "/", num_param, "/", versione])
-            return to_return
+            return f"{prefisso}{type_param}/{str_param}/{num_param}/{versione}"
     else:
         if num_param == "":
-            to_return = "".join([prefisso, type_param, "/", str_param,"_parent", "/", versione])
-            return to_return
+            return f"{prefisso}{type_param}/{str_param}_parent/{versione}"
         else:
-            to_return = "".join([prefisso, type_param, "/", str_param,"_parent", "/", num_param, "/", versione])
-            return to_return
-
-
+            return f"{prefisso}{type_param}/{str_param}_parent/{num_param}/{versione}"
 
 
 @udf(
@@ -732,42 +750,31 @@ def normalize_and_convert_to_iri(str_param, type_param, num_param, parent_param=
     parent_param='http://example.com/idlab/function/valueParent'
 )
 def conditional_normalize_and_suffix(str_param, type_param, num_param, relazione, relazione_target, parent_param=None):
-    # Se la relazione non è uguale a relazione_target, restituisce None
     if relazione.strip().lower() != relazione_target.strip().lower():
         return None
-    # Altrimenti normalizza numero_collegato e suffisso, e li unisce
-    norm_iri = normalize_and_convert_to_iri(str_param, type_param, num_param)
+    return normalize_and_convert_to_iri(str_param, type_param, num_param, parent_param)
 
-    return norm_iri
 
 @udf(
     fun_id="http://example.com/idlab/function/multiple_separator_split_explode",
     string='http://example.com/idlab/function/valParam',
-    separators_list_str='http://example.com/idlab/function/list_param_string_sep')
-
+    separators_list_str='http://example.com/idlab/function/list_param_string_sep'
+)
 def multi_sep_string_split_explode(string, separators_list_str):
     separators_list = separators_list_str.split("---")
     for s in separators_list:
         string = string.replace(s, "---")
     string_list = string.split("---")
-    clean_string_list_exploded = [x.strip() for x in string_list if x]
-    return([el for el in clean_string_list_exploded if el])
+    return [x.strip() for x in string_list if x]
 
 
 @udf(
     fun_id="http://example.com/idlab/function/sequential_iris",
-    iris_n='http://example.com/idlab/function/number_of_iris')
-
+    iris_n='http://example.com/idlab/function/number_of_iris'
+)
 def generate_sequential_iris(iris_n):
-    iris_n =int(iris_n)
-    iris_list_result = []
-    for n in range(iris_n):
-        if iris_n < 10:
-            n_string = "0" + str(n)
-        else:
-            n_string = str(n)
-        iris_list_result.append(n_string)
-    return iris_list_result
+    iris_n = int(iris_n)
+    return [str(n).zfill(2) for n in range(iris_n)]
 
 
 @udf(
@@ -775,36 +782,22 @@ def generate_sequential_iris(iris_n):
     string='http://example.com/idlab/function/valParamStr_inputBase',
     string_nd='http://example.com/idlab/function/valParamStr_secondInput',
     mode='http://example.com/idlab/function/valParamStr_deriveOrExtract',
-    use_prefix = 'http://example.com/idlab/function/use_prefix_opt',
-    suffix = 'http://example.com/idlab/function/sfx')
-
+    use_prefix='http://example.com/idlab/function/use_prefix_opt',
+    suffix='http://example.com/idlab/function/sfx'
+)
 def extract_and_derivate_strings(string, string_nd, mode, use_prefix=False, suffix=None):
-    global prefisso
-
-    if not use_prefix:
-        local_prefix = ''
-    else:
-       local_prefix = prefisso
-
-    if not suffix:
-        sfx = ''
-    else:
-        sfx = suffix
+    local_prefix = prefisso if use_prefix else ''
+    sfx = suffix if suffix else ''
 
     mode = mode.lower().strip()
-    output_iri = ""
-    if mode =="add":
-        output_iri = "-".join([string,string_nd])
+    if mode == "add":
+        output_iri = "-".join([string, string_nd])
     elif mode == "remove":
         output_iri = re.sub(string_nd, "", string)
-    iri_core = normalize_and_convert_to_iri(output_iri)
-    if type(iri_core) is list:
-        iri_core = str(iri_core).replace("[","").replace("]", "")
-    return str(local_prefix) + iri_core + str(sfx)
+    else:
+        return None
 
-
-
-# https://w3id.org/changes/4/aldrovandi/%3Cnr%3E/---/00
-
+    iri_core = normalize_and_convert_to_iri(output_iri, "undefined", "", None)
+    return f"{local_prefix}{iri_core}{sfx}"
 
 

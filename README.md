@@ -1,73 +1,85 @@
-
 # CHANGES Metadata Conversion Plugin
+
+## Sponsor :shield:
+
+<p align="center">
+<img src="https://github.com/morph-kgc/morph-kgc-docs/blob/main/docs/assets/BASF.png" height="100" alt="BASF">
+</p>
+
 ## To Do:
 - produce mapping for acquisition process 
 - Manage both VIAF and ULAN in case a different id is found 
 - Issue with angular brackets, quotes, and datatype managed in pre or post processing. To be authomatized with mapping. See also: Issue with specifying types (IRI/string/etc) when using a function. Check if it's manageable also with YARRRML (it is possible with a RML mapping, try using the official converter). For now: default post-processing is executed on the first version of the RDF file just produced.
-- Similarly, the ```clean_csv``` is necessary for extracting the language - Verify with the suggestion by the developer.
+- Similarly, the `clean_csv` is necessary for extracting the language – Verify with the suggestion by the developer.
 - Clarify licenses and IRI of licenses. 
-- consider uniforming name-surname order.
+- Consider uniforming name-surname order.
 - Keep for now a unique file for all the triples, consider separating for each entity. 
-- make the code command-line-executable
-- implementing the possibility of splitting the files production (one for each aton object, for example)
-- flask webserver for easily exploitable UI 
-- Fonte,Immagine digitale, Iconografia non sono attualmente modellate
+- Make the code command-line-executable.
+- Implementing the possibility of splitting the files production (one for each ATON object, for example).
+- Flask webserver for easily exploitable UI.
+- *Fonte*, *Immagine digitale*, *Iconografia* non sono attualmente modellate.
 
-
+---
 
 ## How to run the code
 
-### preprocessing
-```
+### Preprocessing
+```bash
 python src/morph_kgc_changes_metadata_conversions/clean_csv.py
 ```
-- change manually the paths of the input and the output file (where the input file is the raw one and the output file is the postprocessed input. In the current execution, the file is overwritten)
+- Change manually the paths of the input and the output file (where the input file is the raw one and the output file is the postprocessed input. In the current execution, the file is overwritten).
 
-### triples production and postprocessing
-```
+### Triples production and postprocessing
+```bash
 python main_aldrovandi.py
 ```
-- change manually input, output, mapping and configuration paths if needed
-- the execution of this file, postprocess the produced data and fixes issues related to the dataypes of the subjects and objects of the produced triples, where needed. 
+- Change manually input, output, mapping and configuration paths if needed.
+- The execution of this file postprocesses the produced data and fixes issues related to the datatypes of the subjects and objects of the produced triples, where needed.
 
-### current mapping file path 
+### Current mapping file path 
 ```
 src/morph_kgc_changes_metadata_conversions/sample_mapping_file.yaml
 ```
 
-### structure of the input file
-- the code currently accepts as input csv tables structured as the sample at path: 
+### Structure of the input file
+- The code currently accepts as input CSV tables structured as in the sample at:
 
 ```
 src/morph_kgc_changes_metadata_conversions/sample_input_3_entries.csv
 ```
 
-### Understanding and Running the scripts - Changes
-Premises
+---
 
-To execute the conversion process from CSV to RDF serialization, the Morph-kgc code (https://morph-kgc.readthedocs.io/en/stable/) has been extended. Morph-kgc is software based on the use of RDF Mapping Language (RML, https://rml.io/specs/rml/) conversion technology. Below, the main components are described to understand their structure and usage.
+## Understanding and Running the Scripts – CHANGES
 
-Objectives
+### Premises
+
+To execute the conversion process from CSV to RDF serialization, the Morph-KGC code (https://morph-kgc.readthedocs.io/en/stable/) has been extended. Morph-KGC is software based on the use of RDF Mapping Language (RML, https://rml.io/specs/rml/) conversion technology. Below, the main components are described to understand their structure and usage.
+
+### Objectives
 
 Interaction with the software extension is minimal and aimed at producing data in Turtle RDF serialization. This allows leveraging the semantic potential of the information internally connected and with external resources.
 
-Operational Actions
+### Operational Actions
 
-A general overview of the software components and the possible user interactions is provided below. However, for more detailed information on using the software to produce data in Turtle RDF format, please refer to the README.md file, which will be updated alongside the code.
+A general overview of the software components and the possible user interactions is provided below. However, for more detailed information on using the software to produce data in Turtle RDF format, please refer to the `README.md` file, which will be updated alongside the code.
 
-Mapping Files – Definition of Conversion Rules
+#### Mapping Files – Definition of Conversion Rules
 
 These consist of two YARRRML mapping files (https://rml.io/yarrrml/), one for each of the input datasets and modules of the Application Profile (objects and acquisition). These files define the rules for converting data into RDF format based on the project’s Application Profile. Users do not interact with these files as they are precompiled to cover all scenarios presented in datasets formulated according to the previously described guidelines.
 
-Configuration File – Configuration of Conversion Parameters
+#### Configuration File – Configuration of Conversion Parameters
 
-This is an .ini file where the values of parameters concerning general configurations and each input dataset are defined. For compiling the configuration file, refer to the aforementioned README.md file.
+This is an `.ini` file where the values of parameters concerning general configurations and each input dataset are defined. For compiling the configuration file, refer to the aforementioned `README.md` file.
 
-In the section concerning the configuration of general parameters ([CONFIGURATION]), both mandatory and optional, the user defines the name for the output file (output_file), the format (output_format), and the directory where the file will be saved (output_dir).
+In the section concerning the configuration of general parameters (`[CONFIGURATION]`), both mandatory and optional, the user defines:
+- `output_file`: the name of the output file,
+- `output_format`: the format (e.g., Turtle, N-Triples),
+- `output_dir`: the directory where the file will be saved.
 
-Regarding the configuration of parameters for managing input, it is useful to note that it is possible to handle multiple datasets simultaneously, each with its own mapping file. Therefore, for each data source, a dedicated section will be added (in the format [<source_name>], for example: [DataSource1]), within which the file_path parameter value will specify the path to the input CSV file. The user must specify in [DataSource1] the file_path parameter value as the path to the Objects dataset CSV, while in [DataSource2], the file_path parameter value to be specified will be the path to the acquisition process CSV dataset.
+For input datasets, multiple sources can be configured using distinct sections like `[DataSource1]`, `[DataSource2]`, each pointing to its specific CSV file and mapping file.
 
-```
+```ini
 [CONFIGURATION]
 na_values = ,#N/A,N/A,#N/A N/A,n/a,NA,<NA>,#NA,NULL,null,nan,None
 output_file = knowledge-graph.ttl
@@ -91,33 +103,54 @@ quotechar = "
 encoding = utf-8
 ```
 
-- User-Defined Functions – Handling Specific Cases and Interpreting Complex Data. These are declarative transformation functions implemented through the RML-FNML (RML Function Mapping Language) language. It is important to note that RML already provides a set of built-in functions that allow handling the interpretation of common formalizations across various input datasets, such as extracting multiple values separated by delimiters within the same cell. Additionally, for the case study, further functions have been added to perform value conversion processes characteristic of the case study, such as converting the string of the technique used. Generally, no user intervention is required unless there is a need to insert a value currently not anticipated within one of the controlled value sets, such as in the case of techniques with AAT codes. Refer to the next section (Data Extension) for the extension process. 
-- Launch Script – Executing the Conversion. In addition to orchestrating the execution of the conversion, the launch scripts allow for the pre-processing of datasets, cleaning and normalizing tabular metadata, preparing them for RDF serialization, and resolving any discrepancies that could prevent accurate data extraction. As a temporary solution, the script also performs post-processing of the data, correcting any formal errors in the produced RDF files. For more detailed information on the script launch commands, refer to the README.md file in the GitHub repository.
+---
 
-The command to execute the code is:
+### User-Defined Functions – Handling Specific Cases and Interpreting Complex Data
 
-```python convert_to_rdf.py -obj <csv_input_file_objects> -acq <csv_input_file_acquisition>```
+These are declarative transformation functions implemented through the RML-FNML (RML Function Mapping Language). RML already provides a set of built-in functions, such as extracting multiple values within the same cell. Additional case-study-specific functions (e.g., technique normalization via AAT codes) are included. In general, the user does **not need** to modify these unless new, unanticipated values are introduced.
 
-Summary of Sections:
+### Launch Script – Executing the Conversion
 
-	1.	Premises: Introduction to the software and its purpose.
-	2.	Objectives: Goals of using the software extension.
-	3.	Operational Actions: Overview of software components and user interactions.
-	•	Mapping Files: Definition and purpose.
-	•	Configuration File: Setting parameters for conversion.
-	•	User-Defined Functions: Handling specific cases and complex data interpretations.
-	•	Launch Script: Executing the conversion process.
+The launch script also handles:
+- Preprocessing (e.g., cleaning and normalizing the CSV),
+- Postprocessing (e.g., fixing malformed RDF elements),
+- Executing the full CSV-to-RDF pipeline.
 
-Additional Notes:
+Command to run the full conversion:
 
-	•	Mapping Files: Ensure that the YARRRML mapping files are correctly formatted and correspond to each input dataset.
-	•	Configuration Parameters: Carefully set the output_file, output_format, and output_dir to match your requirements.
-	•	User-Defined Functions: Extend or modify these functions as needed for handling specific data transformation cases.
-	•	Launch Scripts: Verify that all dependencies and paths are correctly set before executing the conversion command.
+```bash
+python convert_to_rdf.py -obj <csv_input_file_objects> -acq <csv_input_file_acquisition>
+```
 
+---
 
-The software is based on Morph-KGC
- **[SoftwareX](https://www.sciencedirect.com/science/article/pii/S2352711024000803)** and **[SWJ](https://www.doi.org/10.3233/SW-223135)** papers:
+### Summary of Sections
+
+1. **Premises**: Introduction to the software and its purpose  
+2. **Objectives**: Goals of using the software extension  
+3. **Operational Actions**: Overview of software components and user interactions  
+   - Mapping Files  
+   - Configuration File  
+   - User-Defined Functions  
+   - Launch Script  
+
+---
+
+### Additional Notes
+
+- **Mapping Files**: Ensure the YARRRML mapping files are correctly formatted and aligned with each dataset.  
+- **Configuration Parameters**: Set `output_file`, `output_format`, and `output_dir` to match your needs.  
+- **User-Defined Functions**: Customize only if new cases arise.  
+- **Launch Scripts**: Check that all dependencies and paths are correctly set.
+
+---
+
+### References
+
+The software is based on Morph-KGC, as documented in:
+
+**[SoftwareX](https://www.sciencedirect.com/science/article/pii/S2352711024000803)** and  
+**[SWJ](https://www.doi.org/10.3233/SW-223135)**
 
 ```bib
 @article{arenas2024rmlfnml,
